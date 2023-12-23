@@ -1,8 +1,24 @@
-// See https://containers.dev/implementors/json_reference/ for configuration reference
 {
-	"name": "Untitled Node.js project",
+	"name": "Technical writing",
 	"build": {
-		"dockerfile": "Dockerfile"
+		"dockerfile": "./Dockerfile"
 	},
-  "remoteUser": "node"
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"editor.formatOnSave": true,
+				"textlint.autoFixOnSave": true,
+				"textlint.run": "onType"
+			},
+			"extensions": [
+				"ms-azuretools.vscode-docker",
+				"taichi.vscode-textlint",
+				"streetsidesoftware.code-spell-checker",
+				"yzhang.markdown-all-in-one",
+				"bierner.markdown-preview-github-styles",
+				"bierner.markdown-emoji"
+			]
+		}
+	},
+	"remoteUser": "node"
 }
